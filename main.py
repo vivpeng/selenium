@@ -1,8 +1,11 @@
-msg = "hello word"
-print(msg)
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+import time
 
-msg2 = "new hello world"
-print(msg2)
+driver = webdriver.Chrome()
 
-msg3 = "new new hello world"
-print(msg3)
+driver.get("https://google.com")
+
+time.sleep(10)
+
+driver.quit()
